@@ -11,7 +11,7 @@ fn main()
     let input: u32 = input.trim().parse().expect("Please type a number"); 
     println!("You typed {}",input);
 
-    let mut counter =0;
+    let mut counter =1;
     let mut num: usize = 1;
     loop {
         let res =  isPrime(num);
@@ -20,7 +20,7 @@ fn main()
             println!("Prime Number: {} is {}", counter, num);
 
             counter = counter + 1;
-            if counter ==  input
+            if counter >  input
             {
                 break;
             }
